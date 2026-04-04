@@ -34,7 +34,7 @@ class ConnectionManager:
 manager = ConnectionManager()
 
 app = FastAPI(title="Hurricane Evac API")
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173", "http://localhost:5174"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173", "http://localhost:5174", "hurricane-simulator-fron-git-f68011-varunmuchanapallys-projects.vercel.app", "hurricane-simulator-frontend-n7ch-3gkeg3gx2.vercel.app"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 @app.get("/health")
 async def health():
