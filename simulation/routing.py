@@ -16,7 +16,7 @@ def _straight_route(from_lng, from_lat, to_lng, to_lat, steps=12):
     ]
 
 
-async def assign_agents_to_zones(agents: list, safe_zones: list, hurricane: dict = None) -> list:
+async def assignagents_to_zones(agents: list, safe_zones: list, hurricane: dict = None) -> list:
     """
     Full AI-driven evacuation routing pipeline:
 
